@@ -1,0 +1,94 @@
+﻿/*General style*/
+html{
+    background-color: white; /*Declares background color for page margins*/
+}
+
+body {
+    font-family: verdana, arial, sans-serif;
+}
+
+/*Link styles*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+/*List styles*/
+li {
+    margin-bottom: 0.5em;
+    list-style-image: url("images/triangle.png"); /*Uses a custom icon for bullet points*/
+}
+
+/*Table styles*/
+table {
+    width: 100%; /*forces table to span entire content container*/
+    text-align: left;
+    border-collapse: collapse; /*prevents gaps between table cells*/
+    margin-bottom: 1em;
+}
+
+td, th {
+    border: 0.15em solid black;
+    padding: 0.2em;
+}
+
+th {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: dodgerblue;   /*Sets first row (the header) to blue*/
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray; /*Sets every other table row to grey*/
+}
+
+tr:nth-child(even) {
+    background-color: white; /*Sets every other table row to white*/
+}
+
+/*Main content container styles*/
+.container { /*sets up page container*/
+    display: grid;
+    grid-template-areas: /*declares matrix indicating where subclasses are arranged*/
+    "header header"
+    "menu content"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    background-color: black;
+    border: 0.1em solid white;
+}
+
+.container > div.header {   /*Page header style*/
+    grid-area: header;
+    text-align: center;
+    font-size: 2em;
+    background-color: dodgerblue;
+    color: white;
+}
+.container > div.menu { /*Table of contents style*/
+    grid-area: menu;
+    background-color: indianred;
+    color: black;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+.container > div.content {  /*Main page content style*/
+    grid-area: content;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.container > div.footer {   /*Footer style*/
+    grid-area: footer;
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
