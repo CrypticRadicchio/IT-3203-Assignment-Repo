@@ -1,29 +1,51 @@
-﻿/*General style*/
+﻿/*General styles*******************************************************************************/
 html{
-    background-color: white; /*Declares background color for page margins*/
+    background-color: black; /*Declares background color for page margins*/
 }
 
 body {
-    font-family: verdana, arial, sans-serif;
+    font-family: "Trebuchet MS", arial, sans-serif;
+    
+}
+
+p
+{
+    line-height: 1.8;
 }
 
 /*Link styles*/
 a {
     color: black;
-    text-decoration: none;
 }
 
 a:hover {
     color: darkgray;
 }
 
-/*List styles*/
+h1 /*used solely for website title*/
+{
+    font-family: "Lucida Console", arial, sans-serif;
+    text-shadow: 3px 3px 3px darkblue;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 0.5em;
+}
+
+h2
+{
+    padding-top: 0.5em;
+    border-top: 0.2em solid #f2f28d;
+    font-family: "Lucida Console", arial, sans-serif;
+}
+
+/*List styles*****************************************************************************************************/
 li {
     margin-bottom: 0.5em;
     list-style-image: url("images/triangle.png"); /*Uses a custom icon for bullet points*/
 }
 
-/*Table styles*/
+/*Table styles********************************************************************************************/
 table {
     width: 100%; /*forces table to span entire content container*/
     text-align: left;
@@ -51,17 +73,17 @@ tr:nth-child(even) {
     background-color: white; /*Sets every other table row to white*/
 }
 
-/*Main content container styles*/
+/*Main content container styles************************************************************************/
 .container { /*sets up page container*/
     display: grid;
     grid-template-areas: /*declares matrix indicating where subclasses are arranged*/
     "header header"
     "menu content"
     "footer footer";
-    grid-template-columns: 1fr 3fr;
-    gap: 5px;
+    grid-template-columns: 1fr 5fr;
     background-color: black;
-    border: 0.1em solid white;
+    border: 0.2em ridge white;
+    
 }
 
 .container > div.header {   /*Page header style*/
@@ -70,13 +92,16 @@ tr:nth-child(even) {
     font-size: 2em;
     background-color: dodgerblue;
     color: white;
+    border-bottom: 0.2em ridge royalblue;
 }
 .container > div.menu { /*Table of contents style*/
     grid-area: menu;
     background-color: indianred;
     color: black;
     padding-left: 1em;
-    font-size: 1.2em;
+    padding-right: 1em;
+    font-size: 1em;
+    border-right: 0.2em ridge #c33c3c;
 }
 .container > div.content {  /*Main page content style*/
     grid-area: content;
@@ -84,6 +109,7 @@ tr:nth-child(even) {
     color: black;
     padding-left: 1em;
     padding-right: 1em;
+    min-height: 70vh;
 }
 .container > div.footer {   /*Footer style*/
     grid-area: footer;
@@ -91,4 +117,76 @@ tr:nth-child(even) {
     text-align: center;
     font-size: 0.8em;
     color: white;
+    border-top: 0.2em ridge royalblue;
+}
+
+/*Quiz styles*****************************************************************************/
+.question-header
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    border-top: 0.2em solid #f2f28d;
+}
+
+.option, .textfield {
+    background-color: #f7f7bb;
+    border: 0.1em #f2f28d groove;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    max-width: 40em;
+}
+
+.option:hover, .textfield:hover {
+    background-color: #f2f28d;
+    border: 0.1em #eded5e groove;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    max-width: 40em;
+}
+
+.option-correct, .textfield-correct
+{
+    background-color: #90ee90;
+    border: 0.1em #65e765 groove;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    max-width: 40em;
+    font-weight: bold;
+}
+
+.option-incorrect, .textfield-incorrect
+{
+    background-color: #e19d9d;
+    border: 0.1em #d57676 groove;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    max-width: 40em;
+}
+
+.quiz-button
+{
+    background-color: #f2f28d;
+    border: 0.1em #eded5e groove;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.quiz-button:hover
+{
+    background-color: #eded5e;
+    border: 0.1em #e8e830 groove;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.quiz-result
+{
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 0.5em;
 }

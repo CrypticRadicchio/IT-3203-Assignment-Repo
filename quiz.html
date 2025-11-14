@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Yourself</title>
+
+    <link rel="stylesheet" href="style.css">    <!--References stylesheet!-->
+    
+    <script src="quiz.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="header"> <!--Identical on every page!-->
+        <h1>How the Web Browser Revolutionized the World Wide Web</h1>
+    </div>
+    <div class="menu">  <!--Identical on every page!-->
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="index.html">Abstract</a></li>
+            <li><a href="key_concepts.html">Key Concepts</a></li>
+            <li><a href="early_web_browsers.html">Designing the Earliest Web Browsers</a></li>
+            <li><a href="first_browser_war.html">Mainstream Adoption and the First Browser War</a></li>
+            <li><a href="second_browser_war.html">Competing Browsers and the Second Browser War</a></li>
+            <li><a href="mobile_browsers.html">Developing Browsers for Mobile Devices</a></li>
+            <li><a href="quiz.html">Test Yourself</a></li>
+            <li><a href="references.html">Resources and References</a></li>
+            <li><a href="about.html">About</a></li>
+        </ol>
+    </div>
+    <div class="content">
+        <h2>Test Yourself</h2>
+        <p>Assess the knowledge you've gained after reading through each page on this site. Once you've selected an answer 
+        for each question, click the "Submit" button to see how you did.</p>
+        
+        <!-- Form contains a short piece of code to disable submitting the data when the enter key is pressed !-->
+        <form action="" name="quiz" autocomplete="off" onkeydown="if(event.keyCode === 13) { event.preventDefault(); }">
+            
+            <!-- Each question type has an identifier (multichoice = mc, multiple selection = ms, text input = t)
+            and are numbered. Incorrect answer options are identified as "option" while correct options are identified
+            as "answer".
+             
+             Question options are wrapped in individual divs so that they can have background colors cleanly applied. !-->
+            
+            <!-- Question 1 ---------------------------------------------------------------------- !-->
+            <div id="mc1-container">
+                <p class="question-header">Question 1</p>
+                <p>What were the early precursors to web browsers capable of displaying?</p>
+                <div class="option">
+                    <input type="radio" id="mc1-op1" name="mc1" value="op1" >
+                    <label for="mc1-op1" >Text only</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc1-op2" name="mc1" value="op2">
+                    <label for="mc1-op2">Text, hypertext, and images</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc1-answer" name="mc1" value="op3">
+                    <label for="mc1-answer">Only text and hypertext</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc1-op4" name="mc1" value="op4">
+                    <label for="mc1-op4">Text, hypertext, images, and videos</label><br>
+                </div>
+            </div>
+
+            <!-- Question 2 ---------------------------------------------------------------------- !-->
+            <div id="mc2-container">
+                <p class="question-header">Question 2</p>
+                <p>What was the main reason the World Wide Web Consortium (W3C) was founded?</p>
+                <div class="option">
+                    <input type="radio" id="mc2-answer" name="mc2" value="op1" > <!-- Correct answer !-->
+                    <label for="mc2-answer" >To standardize HTML so webpages looked the same on every browser</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc2-op1" name="mc2" value="op2">
+                    <label for="mc2-op1">To determine what information could be displayed on webpages in different countries</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc2-op2" name="mc2" value="op3">
+                    <label for="mc2-op2">To figure out how to develop mobile-friendly web browsers</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc2-op4" name="mc2" value="op4">
+                    <label for="mc2-op4">To create an archive of significant events in the history of the World Wide Web</label><br>
+                </div>
+            </div>
+
+            <!-- Question 3 ---------------------------------------------------------------------- !-->
+            <div id="mc3-container">
+                <p class="question-header">Question 3</p>
+                <p>Who were the primary competitors in the First Browser War?</p>
+                <div class="option">
+                    <input type="radio" id="mc3-op1" name="mc3" value="op1" >
+                    <label for="mc3-op1" >Netscape and IBM</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc3-op2" name="mc3" value="op2">
+                    <label for="mc3-op2">Google and Microsoft</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc3-op3" name="mc3" value="op3">
+                    <label for="mc3-op3">Microsoft and Mozilla</label><br>
+                </div>
+                <div class="option">
+                    <input type="radio" id="mc3-answer" name="mc3" value="op4"> <!-- Correct answer !-->
+                    <label for="mc3-answer">Netscape and Microsoft</label><br>
+                </div>
+            </div>
+
+            <!-- Question 4 ---------------------------------------------------------------------- !-->
+            <div id="ms1-container">
+                <p class="question-header">Question 4</p>
+                <p>Which web browsers are still popular today?</p>
+                <p>Select all that apply.</p>
+                <div class="option">
+                    <input type="checkbox" id="ms1-answer1" name="ms1" value="op1"> <!-- Correct answer !-->
+                    <label for="ms1-answer1">Google Chrome</label><br>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ms1-answer2" name="ms1" value="op2"> <!-- Correct answer !-->
+                    <label for="ms1-answer2">Mozilla Firefox</label><br>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ms1-op5" name="ms1" value="op3">
+                    <label for="ms1-op5">Netscape Navigator</label><br>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ms1-answer3" name="ms1" value="op4"> <!-- Correct answer !-->
+                    <label for="ms1-answer3">Microsoft Edge</label><br>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="ms1-answer4" name="ms1" value="op5"> <!-- Correct answer !-->
+                    <label for="ms1-answer4">Safari</label><br>
+                </div>
+            </div>
+
+            <!-- Question 5 ---------------------------------------------------------------------- !-->
+            <div id="t1-container">
+                <p class="question-header">Question 5</p>
+                <p>What year did Tim Berners-Lee invent the first true web browser?</p> <!-- Correct answer is 1990 !-->
+                <label for="t1-answer">Enter your answer below:</label><br>
+                <input type="text" id="t1-answer" name="t1" class="textfield">
+            </div>
+            
+            <br>
+
+            <input type="button" id="submit" value="Submit" onClick="checkAnswers()" class="quiz-button">
+            
+            <div id="resultsContainer"></div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Created for IT 3203 with Instructor Denise Tucker during Fall 2025 at Kennesaw State University.</p>
+        <p>View the class website <a href="https://ksuweb.github.io/IT3203/">here</a>.</p>
+    </div>
+</div>
+</body>
+</html>
