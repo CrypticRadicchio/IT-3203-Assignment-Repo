@@ -77,15 +77,14 @@ tr:nth-child(even) {
 .container { /*sets up page container*/
     display: grid;
     grid-template-areas: /*declares matrix indicating where subclasses are arranged*/
-    "header header"
-    "menu content"
-    "footer footer";
-    grid-template-columns: 1fr 5fr;
+    "header"
+    "topnav"
+    "content"
+    "footer";
+    grid-template-columns: 1fr;
     background-color: black;
     border: 0.2em ridge white;
-    
 }
-
 .container > div.header {   /*Page header style*/
     grid-area: header;
     text-align: center;
@@ -103,6 +102,50 @@ tr:nth-child(even) {
     font-size: 1em;
     border-right: 0.2em ridge #c33c3c;
 }
+/* Style the navigation menu */
+.container > div.topnav {
+    overflow: hidden;
+    position: relative;
+    background-color: indianred;
+    color: black;
+    font-size: 1em;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #links {
+    display: none;
+    font-size: 1em;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: darkred;
+    color: white;
+}
 .container > div.content {  /*Main page content style*/
     grid-area: content;
     background-color: lightgoldenrodyellow;
@@ -119,6 +162,7 @@ tr:nth-child(even) {
     color: white;
     border-top: 0.2em ridge royalblue;
 }
+
 
 /*Quiz styles*****************************************************************************/
 .question-header

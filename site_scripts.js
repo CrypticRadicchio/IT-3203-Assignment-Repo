@@ -103,3 +103,13 @@
 function resetQuiz(){
     location.replace("quiz.html");
 }
+
+function toggleMenu(){
+    console.log("menu toggled");
+    let x = document.getElementById("links");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
