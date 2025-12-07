@@ -184,6 +184,7 @@ tr:nth-child(even) {
     font-size: 0.8em;
     color: white;
     border-top: 0.2em ridge royalblue;
+    padding: 10px;
 }
 
 
