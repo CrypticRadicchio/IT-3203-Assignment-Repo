@@ -47,7 +47,7 @@ li {
 
 /*Table styles********************************************************************************************/
 table {
-    width: 100%; /*forces table to span entire content container*/
+    max-width: 100%; /*forces table to span entire content container*/
     text-align: left;
     border-collapse: collapse; /*prevents gaps between table cells*/
     margin-bottom: 1em;
