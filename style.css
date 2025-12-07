@@ -108,6 +108,7 @@ tr:nth-child(even) {
     background-color: indianred;
     color: black;
     font-size: 17px;
+    border-bottom: 0.2em ridge #c33c3c;
 }
 
 /* Style navigation menu links */
