@@ -48,14 +48,24 @@ h2
 h3
 {
     font-size: 24px;
+    border-top: 0.1em solid #f2f28d;
+    padding-top: 0.5em;
 }
-@media screen and (max-width: 600px) { h3 { font-size: 220px}}
+@media screen and (max-width: 600px) { h3 { font-size: 22px}}
+
+br {
+    display: none;
+}
+@media screen and (max-width: 600px) { br { display: block; }}
 
 /*List styles*****************************************************************************************************/
 li {
     margin-bottom: 0.5em;
     list-style-image: url("images/triangle.png"); /*Uses a custom icon for bullet points*/
+    line-height: 1.8;
+    font-size: 16px;
 }
+@media screen and (max-width: 600px) { li { font-size: 14px;} }
 
 /*Table styles********************************************************************************************/
 table {
