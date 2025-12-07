@@ -106,10 +106,10 @@ function resetQuiz(){
 
 function toggleMenu(){
     console.log("menu toggled");
-    let x = document.getElementById("links");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    let x = document.getElementById("menu");
+    if (x.className === "topnav") {
+        x.className += " responsive";
     } else {
-        x.style.display = "block";
+        x.className = "topnav";
     }
 }
