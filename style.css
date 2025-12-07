@@ -26,7 +26,7 @@ a:hover {
 
 h1 /*used solely for website title*/
 {
-    font-family: "Lucida Console", arial, sans-serif;
+    font-family: "Lucida Console", Monospaced, sans-serif;
     font-size: 45px;
     text-shadow: 3px 3px 3px darkblue;
     width: 80%;
@@ -38,12 +38,18 @@ h1 /*used solely for website title*/
 
 h2
 {
-    font-size: 24px;
+    font-size: 28px;
     padding-top: 0.5em;
     border-top: 0.2em solid #f2f28d;
-    font-family: "Lucida Console", arial, sans-serif;
+    font-family: "Lucida Console", Monospaced, sans-serif;
 }
-@media screen and (max-width: 600px) { h2 { font-size: 20px}}
+@media screen and (max-width: 600px) { h2 { font-size: 24px}}
+
+h3
+{
+    font-size: 24px;
+}
+@media screen and (max-width: 600px) { h3 { font-size: 220px}}
 
 /*List styles*****************************************************************************************************/
 li {
