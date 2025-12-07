@@ -11,7 +11,9 @@ body {
 p
 {
     line-height: 1.8;
+    font-size: 18px;
 }
+@media screen and (max-width: 600px) { p { font-size: 16px;} }
 
 /*Link styles*/
 a {
@@ -25,19 +27,23 @@ a:hover {
 h1 /*used solely for website title*/
 {
     font-family: "Lucida Console", arial, sans-serif;
+    font-size: 45px;
     text-shadow: 3px 3px 3px darkblue;
     width: 80%;
     text-align: center;
     margin: auto;
     padding: 0.5em;
 }
+@media screen and (max-width: 600px) { h1 { font-size: 28px}}
 
 h2
 {
+    font-size: 24px;
     padding-top: 0.5em;
     border-top: 0.2em solid #f2f28d;
     font-family: "Lucida Console", arial, sans-serif;
 }
+@media screen and (max-width: 600px) { h2 { font-size: 20px}}
 
 /*List styles*****************************************************************************************************/
 li {
@@ -82,6 +88,7 @@ tr:nth-child(even) {
     "content"
     "footer";
     grid-template-columns: 1fr;
+    max-width: 100%;
     background-color: black;
     border: 0.2em ridge white;
 }
