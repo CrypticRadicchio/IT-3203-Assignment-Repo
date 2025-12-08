@@ -19,6 +19,7 @@ p
 /*Link styles*/
 a {
     color: black;
+    word-break: break-all;
 }
 
 a:hover {
