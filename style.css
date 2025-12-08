@@ -11,9 +11,10 @@ body {
 p
 {
     line-height: 1.8;
-    font-size: 18px;
+    font-size: 16px;
 }
 @media screen and (max-width: 600px) { p { font-size: 16px;} }
+@media screen and (max-width: 1024px) { p { font-size: 20px;} }
 
 /*Link styles*/
 a {
@@ -50,8 +51,16 @@ h3
     font-size: 24px;
     border-top: 0.1em solid #f2f28d;
     padding-top: 0.5em;
+    font-family: "Lucida Console", Monospaced, sans-serif;
 }
 @media screen and (max-width: 600px) { h3 { font-size: 22px}}
+
+h4
+{
+    font-family: "Lucida Console", Monospaced, sans-serif;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) { h4 { font-size: 18px}}
 
 br {
     display: none;
@@ -65,7 +74,7 @@ li {
     line-height: 1.8;
     font-size: 16px;
 }
-@media screen and (max-width: 600px) { li { font-size: 14px;} }
+@media screen and (max-width: 600px) { li { font-size: 16px;} }
 
 /*Table styles********************************************************************************************/
 table {
