@@ -213,6 +213,11 @@ tr:nth-child(even) {
     padding: 10px;
 }
 
+.ref-container
+{
+    margin-bottom: 2em;
+    border-top: 0.1em solid #f2f28d;
+}
 
 /*Quiz styles*****************************************************************************/
 .question-header
